@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9DA56B3A-732C-F9AE-9B8D-CB6E7EF876CD}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{03841C9D-7ED6-46E8-7839-B9C130D24335}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -148,12 +148,14 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6E4ADFD0-8190-855C-CD5F-999D394C4757}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B29451AF-9307-2323-47F6-B444B95DB56C}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Plugins>
 				<Custom>
 					<Plugin Id="85231025" Name="DENIED 03" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="546627739" Name="Wwise Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="963081078" Name="WOOSH 01" LibName="Wwise Synth One" LibId="9699330"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -164,9 +166,17 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="668740149" Name="PlaySound_Whoosh" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="546627739"/>
+							<PluginRef Id="963081078"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 			</Events>
 			<GameParameters/>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3199A781-E873-AC6C-4F68-DF880E6A3EFF}</FileHash>
+	<FileHash>{CAC7F0CC-9D4B-9775-3F28-E4297F5E5495}</FileHash>
 </SoundBanksInfo>

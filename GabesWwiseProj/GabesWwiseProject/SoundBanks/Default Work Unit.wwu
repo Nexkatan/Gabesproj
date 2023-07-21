@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{D5F2F27C-B869-419D-817D-ACE89528ACA2}">
 					<ObjectInclusionList>
+						<ObjectRef Name="PlaySound_Whoosh" ID="{CAC38BDA-FE63-47A3-A69D-1A347A2A714D}" WorkUnitID="{1E4FDF51-D08A-4EF4-B0E7-02F87A6C10BD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlaySound_Denied" ID="{B38768C8-11FC-47EA-BE67-3D980F6A72E8}" WorkUnitID="{1E4FDF51-D08A-4EF4-B0E7-02F87A6C10BD}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

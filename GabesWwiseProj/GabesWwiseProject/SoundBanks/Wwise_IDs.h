@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAYSOUND_DENIED = 10151846U;
+        static const AkUniqueID PLAYSOUND_WHOOSH = 668740149U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
