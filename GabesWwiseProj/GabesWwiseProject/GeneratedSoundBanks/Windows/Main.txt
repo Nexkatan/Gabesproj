@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	10151846	PlaySound_Denied			\Default Work Unit\PlaySound_Denied	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	129	MIDI note velocity			\MIDI note velocity	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	245657745	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	674808563	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	85231025	DENIED 03	Wwise Synth One		\Actor-Mixer Hierarchy\Factory Synth One\UI Sounds\DENIED 03\DENIED 03	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+

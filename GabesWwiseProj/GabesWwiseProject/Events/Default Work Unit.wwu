@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1E4FDF51-D08A-4EF4-B0E7-02F87A6C10BD}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{1E4FDF51-D08A-4EF4-B0E7-02F87A6C10BD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlaySound_Denied" ID="{B38768C8-11FC-47EA-BE67-3D980F6A72E8}">
+					<ChildrenList>
+						<Action Name="" ID="{BD09E5F2-AEC3-43B3-9820-43D1C6761B44}" ShortID="952817077">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DENIED 03" ID="{60F71277-000E-4738-A84F-554233719C0F}" WorkUnitID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
