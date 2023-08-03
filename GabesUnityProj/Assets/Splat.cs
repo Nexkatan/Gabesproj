@@ -14,9 +14,16 @@ public class Splat : MonoBehaviour
 
         if (other.gameObject.tag == "Wall")
         {
-            Rigidbody bulletInstance = Instantiate(splatOnWall, bulletSplatPosition.position + offset, Quaternion.LookRotation(other.contacts[0].normal) * Quaternion.Euler(90f ,0f, 0f)) as Rigidbody;
-            Destroy(bulletInstance.gameObject, 5);
-            Destroy(gameObject);
+            if (gameObject.GetComponent<Renderer>().material.color == other.gameObject.GetComponent<Renderer>().material.color)
+            {
+                Rigidbody bulletInstance = Instantiate(splatOnWall, bulletSplatPosition.position + offset, Quaternion.LookRotation(other.contacts[0].normal) * Quaternion.Euler(90f, 0f, 0f)) as Rigidbody;
+                Destroy(bulletInstance.gameObject, 5);
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
         else
         {
