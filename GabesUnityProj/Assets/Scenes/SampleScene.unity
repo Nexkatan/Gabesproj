@@ -123,6 +123,41 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &64483121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 64483122}
+  m_Layer: 0
+  m_Name: Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &64483122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64483121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.853077, y: 31.932547, z: -12.751914}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 588249971}
+  - {fileID: 2146086643}
+  - {fileID: 1685603713}
+  - {fileID: 1897060392}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &393864303
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +171,6 @@ GameObject:
   - component: {fileID: 393864308}
   - component: {fileID: 393864307}
   - component: {fileID: 393864306}
-  - component: {fileID: 393864305}
   m_Layer: 0
   m_Name: Splat (3)
   m_TagString: Untagged
@@ -159,18 +193,6 @@ Transform:
   m_Father: {fileID: 1362695518}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &393864305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393864303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f79c5b03c64c24d97def9dfd069b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &393864306
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -241,7 +263,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
+  - {fileID: 2100000, guid: bb362c472a29a364393c2f525f4e884d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -373,7 +395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415584788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.31, y: 2, z: 38.17}
+  m_LocalPosition: {x: 13.36, y: 2, z: -5.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -381,7 +403,7 @@ Transform:
   - {fileID: 1271838078}
   - {fileID: 963194228}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &415584796
 MonoBehaviour:
@@ -527,7 +549,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &588249967
 GameObject:
@@ -543,7 +565,7 @@ GameObject:
   - component: {fileID: 588249968}
   - component: {fileID: 588249972}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Wall1
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,13 +649,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588249967}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 50}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -27.853077, y: -29.932547, z: 62.751915}
   m_LocalScale: {x: 100, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 64483122}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &588249972
 Rigidbody:
@@ -893,12 +915,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891806504}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -51.163, y: 1.324, z: 0.095}
-  m_LocalScale: {x: 0.25, y: 0.5000001, z: 0.25000006}
+  m_LocalPosition: {x: -51.163, y: 1.3239999, z: 0.09500122}
+  m_LocalScale: {x: 0.25, y: 0.50000024, z: 0.25000012}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &891806506
 SphereCollider:
@@ -1159,7 +1181,6 @@ GameObject:
   - component: {fileID: 1133508691}
   - component: {fileID: 1133508690}
   - component: {fileID: 1133508689}
-  - component: {fileID: 1133508688}
   m_Layer: 0
   m_Name: Splat (2)
   m_TagString: Untagged
@@ -1182,18 +1203,6 @@ Transform:
   m_Father: {fileID: 1362695518}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &1133508688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133508686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f79c5b03c64c24d97def9dfd069b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1133508689
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1264,7 +1273,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
+  - {fileID: 2100000, guid: bb362c472a29a364393c2f525f4e884d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1346,7 +1355,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1432,6 +1441,7 @@ MonoBehaviour:
   firePosition: {fileID: 1867817957}
   bulletSpeed: 10000
   rotateSpeed: 0
+  fireRate: 0.1
 --- !u!1 &1362695513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,7 +1455,6 @@ GameObject:
   - component: {fileID: 1362695516}
   - component: {fileID: 1362695515}
   - component: {fileID: 1362695514}
-  - component: {fileID: 1362695519}
   m_Layer: 0
   m_Name: Splat
   m_TagString: Untagged
@@ -1523,7 +1532,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
+  - {fileID: 2100000, guid: bb362c472a29a364393c2f525f4e884d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1574,20 +1583,8 @@ Transform:
   - {fileID: 1767222223}
   - {fileID: 1421842115}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1362695519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362695513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f79c5b03c64c24d97def9dfd069b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1363900328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,7 +1598,6 @@ GameObject:
   - component: {fileID: 1363900333}
   - component: {fileID: 1363900332}
   - component: {fileID: 1363900331}
-  - component: {fileID: 1363900330}
   m_Layer: 0
   m_Name: Splat (1)
   m_TagString: Untagged
@@ -1624,18 +1620,6 @@ Transform:
   m_Father: {fileID: 1362695518}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1363900330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363900328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f79c5b03c64c24d97def9dfd069b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1363900331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1706,7 +1690,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
+  - {fileID: 2100000, guid: bb362c472a29a364393c2f525f4e884d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1749,7 +1733,6 @@ GameObject:
   - component: {fileID: 1396059681}
   - component: {fileID: 1396059680}
   - component: {fileID: 1396059679}
-  - component: {fileID: 1396059678}
   m_Layer: 0
   m_Name: Splat (4)
   m_TagString: Untagged
@@ -1772,18 +1755,6 @@ Transform:
   m_Father: {fileID: 1362695518}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &1396059678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396059676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f79c5b03c64c24d97def9dfd069b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1396059679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1854,7 +1825,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
+  - {fileID: 2100000, guid: bb362c472a29a364393c2f525f4e884d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1897,7 +1868,6 @@ GameObject:
   - component: {fileID: 1421842119}
   - component: {fileID: 1421842118}
   - component: {fileID: 1421842117}
-  - component: {fileID: 1421842116}
   m_Layer: 0
   m_Name: Splat (8)
   m_TagString: Untagged
@@ -1920,18 +1890,6 @@ Transform:
   m_Father: {fileID: 1362695518}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &1421842116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421842114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f79c5b03c64c24d97def9dfd069b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1421842117
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2002,7 +1960,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
+  - {fileID: 2100000, guid: bb362c472a29a364393c2f525f4e884d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2120,7 +2078,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5c39410719446a14898a84364a4879c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2157,13 +2115,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685603708}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -50, y: 2, z: 0}
-  m_LocalScale: {x: 100, y: 5, z: 1}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -77.85307, y: -29.932547, z: 12.751914}
+  m_LocalScale: {x: 100.00004, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 64483122}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1767222222
 GameObject:
@@ -2178,7 +2136,6 @@ GameObject:
   - component: {fileID: 1767222227}
   - component: {fileID: 1767222226}
   - component: {fileID: 1767222225}
-  - component: {fileID: 1767222224}
   m_Layer: 0
   m_Name: Splat (7)
   m_TagString: Untagged
@@ -2201,18 +2158,6 @@ Transform:
   m_Father: {fileID: 1362695518}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &1767222224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767222222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f79c5b03c64c24d97def9dfd069b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1767222225
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2283,7 +2228,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
+  - {fileID: 2100000, guid: bb362c472a29a364393c2f525f4e884d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2362,7 +2307,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2434,7 +2379,7 @@ GameObject:
   - component: {fileID: 1897060389}
   - component: {fileID: 1897060388}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Wall4
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2508,7 +2453,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2545,13 +2490,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897060387}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -50}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -27.853077, y: -29.932547, z: -37.248085}
   m_LocalScale: {x: 100, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 64483122}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2073538090
 GameObject:
@@ -2566,7 +2511,6 @@ GameObject:
   - component: {fileID: 2073538095}
   - component: {fileID: 2073538094}
   - component: {fileID: 2073538093}
-  - component: {fileID: 2073538092}
   m_Layer: 0
   m_Name: Splat (5)
   m_TagString: Untagged
@@ -2589,18 +2533,6 @@ Transform:
   m_Father: {fileID: 1362695518}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &2073538092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073538090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f79c5b03c64c24d97def9dfd069b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &2073538093
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2671,7 +2603,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
+  - {fileID: 2100000, guid: bb362c472a29a364393c2f525f4e884d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2756,7 +2688,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2110078178
 GameObject:
@@ -2771,7 +2703,6 @@ GameObject:
   - component: {fileID: 2110078183}
   - component: {fileID: 2110078182}
   - component: {fileID: 2110078181}
-  - component: {fileID: 2110078180}
   m_Layer: 0
   m_Name: Splat (6)
   m_TagString: Untagged
@@ -2794,18 +2725,6 @@ Transform:
   m_Father: {fileID: 1362695518}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &2110078180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110078178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f79c5b03c64c24d97def9dfd069b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &2110078181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2876,7 +2795,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 976dd8d3f68654644ad5b7fea920376b, type: 2}
+  - {fileID: 2100000, guid: bb362c472a29a364393c2f525f4e884d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2994,7 +2913,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b80ee4c922f0a274b82f3853147359e2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3031,11 +2950,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146086638}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 50, y: 2, z: 0}
-  m_LocalScale: {x: 100, y: 5, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 22.146923, y: -29.932547, z: 12.751914}
+  m_LocalScale: {x: 100.00004, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 64483122}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}

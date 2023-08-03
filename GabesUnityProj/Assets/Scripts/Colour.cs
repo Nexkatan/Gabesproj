@@ -14,9 +14,9 @@ public class Colour : MonoBehaviour
         {
             GetComponent<Renderer>().material.color = Color.blue;
         }
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            GetComponent<Renderer>().material.color = Color.yellow;
+            GetComponent<Renderer>().material.color = Color.green;
         }
     }
 }
