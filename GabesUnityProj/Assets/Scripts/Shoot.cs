@@ -21,6 +21,7 @@ public class Shoot : MonoBehaviour
         {
             Rigidbody bulletInstance = Instantiate(sphereBullet, firePosition.position + new Vector3(0, 0, 1), firePosition.rotation) as Rigidbody;
             bulletInstance.AddForce(firePosition.up * bulletSpeed);
+            Destroy(bulletInstance.gameObject, 5);
         }
 
     }
