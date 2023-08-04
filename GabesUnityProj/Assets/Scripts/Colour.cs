@@ -18,5 +18,9 @@ public class Colour : MonoBehaviour
         {
             GetComponent<Renderer>().material.color = Color.green;
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            GetComponent<Renderer>().material.color = Color.black;
+        }
     }
 }

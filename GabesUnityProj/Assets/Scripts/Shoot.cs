@@ -10,13 +10,13 @@ public class Shoot : MonoBehaviour
     public float rotateSpeed;
     public float fireRate;
     private float lastShot;
+    public float lifeTime;
 
     void Update()
     {
         if (Input.GetButton("Fire1"))
         {
             Shoota();
-            Debug.Log(gameObject.GetComponent<Renderer>().material.color);
         }
     }
 
@@ -26,8 +26,9 @@ public class Shoot : MonoBehaviour
         if (Time.time > fireRate + lastShot)
         {
             Rigidbody bulletInstance = Instantiate(sphereBullet, firePosition.position, firePosition.rotation) as Rigidbody;
+            bulletInstance.transform.localScale = Vector3.one * 5;
             bulletInstance.AddForce(firePosition.up * bulletSpeed);
-            Destroy(bulletInstance.gameObject, 5);
+            Destroy(bulletInstance.gameObject, lifeTime);
             lastShot = Time.time;
         }
     }
